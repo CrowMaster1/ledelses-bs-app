@@ -1,5 +1,8 @@
 const QUOTES = [
-  // ── NÆRLEDELSE ──────────────────────────────────────────────────────────
+
+  // ══════════════════════════════════════════════════════
+  // NÆRLEDELSE × KERNEOPGAVEN
+  // ══════════════════════════════════════════════════════
   {
     id: 1,
     text: "Nærledelse handler ikke om fysisk nærhed — det handler om ledelsesmæssig tilstedeværelse i de øjeblikke, der tæller.",
@@ -9,32 +12,36 @@ const QUOTES = [
   },
   {
     id: 2,
-    text: "Man kan ikke lede på afstand det, som kræver nærhed.",
-    author: "Regionernes Ledelsesakademi",
+    text: "Ledelsesspændet må aldrig blive så stort, at lederen mister kontakten til kerneopgaven.",
+    author: "DSS, 2024",
     style: "Nærledelse",
     theme: "Kerneopgaven"
   },
   {
     id: 3,
-    text: "Nærledelse er ikke en ledelsesstil. Det er et ledelsesansvar.",
-    author: "DSS Konference, 2023",
+    text: "Det nære sundhedsvæsen starter med nær ledelse.",
+    author: "Sundhedsreformen, 2025",
     style: "Nærledelse",
     theme: "Kerneopgaven"
   },
   {
     id: 4,
-    text: "Den gode leder er til stede — ikke bare fysisk, men mentalt og fagligt.",
-    author: "Dansk Sygeplejeråd, 2024",
+    text: "En leder, der ikke er til stede, er ikke en leder — de er en titel.",
+    author: "LinkedIn Top Voice, 2024",
     style: "Nærledelse",
-    theme: "Psykologisk tryghed"
+    theme: "Kerneopgaven"
   },
   {
     id: 5,
-    text: "Nærledelse kræver mod til at se det, man er tæt på.",
-    author: "Executive Coach, Region H",
+    text: "Man kan ikke lede på afstand det, som kræver nærhed.",
+    author: "Regionernes Ledelsesakademi",
     style: "Nærledelse",
-    theme: "Forandringsledelse"
+    theme: "Kerneopgaven"
   },
+
+  // ══════════════════════════════════════════════════════
+  // NÆRLEDELSE × PSYKOLOGISK TRYGHED
+  // ══════════════════════════════════════════════════════
   {
     id: 6,
     text: "Det er i nærheden, at tillid opstår. Det er i nærheden, at ledelse sker.",
@@ -51,530 +58,573 @@ const QUOTES = [
   },
   {
     id: 8,
-    text: "Nærledelse er svaret på mange af de udfordringer, vi ser i rekruttering og fastholdelse.",
-    author: "Regionernes Ledelsesakademi",
+    text: "Den gode leder er til stede — ikke bare fysisk, men mentalt og fagligt.",
+    author: "Dansk Sygeplejeråd, 2024",
     style: "Nærledelse",
-    theme: "Rekruttering"
+    theme: "Psykologisk tryghed"
   },
   {
     id: 9,
-    text: "Det nære sundhedsvæsen starter med nær ledelse.",
-    author: "Sundhedsreformen, 2025",
-    style: "Nærledelse",
-    theme: "Vision"
-  },
-  {
-    id: 10,
-    text: "En leder, der ikke er til stede, er ikke en leder — de er en titel.",
-    author: "LinkedIn Top Voice, 2024",
-    style: "Nærledelse",
-    theme: "Kerneopgaven"
-  },
-  {
-    id: 11,
     text: "Nærledelse er ikke hvad du gør en gang om måneden. Det er hvad du er hver dag.",
     author: "Sygeplejersken, 2023",
     style: "Nærledelse",
     theme: "Psykologisk tryghed"
   },
   {
-    id: 12,
-    text: "Ledelsesspændet må aldrig blive så stort, at lederen mister kontakten til kerneopgaven.",
-    author: "DSS, 2024",
+    id: 10,
+    text: "Psykologisk tryghed skabes ikke i politikker. Den skabes i gangene.",
+    author: "Region Nordjylland, 2024",
     style: "Nærledelse",
-    theme: "Kerneopgaven"
+    theme: "Psykologisk tryghed"
   },
 
-  // ── TRANSFORMATIONEL ────────────────────────────────────────────────────
+  // ══════════════════════════════════════════════════════
+  // NÆRLEDELSE × FORANDRINGSLEDELSE
+  // ══════════════════════════════════════════════════════
+  {
+    id: 11,
+    text: "Nærledelse kræver mod til at se det, man er tæt på.",
+    author: "Executive Coach, Region H",
+    style: "Nærledelse",
+    theme: "Forandringsledelse"
+  },
+  {
+    id: 12,
+    text: "Forandring, der ikke er forankret i nærhed, er forandring uden tyngde.",
+    author: "DSS Konference, 2024",
+    style: "Nærledelse",
+    theme: "Forandringsledelse"
+  },
   {
     id: 13,
-    text: "Vi har en once in a lifetime-mulighed for at transformere sundhedsvæsenet. Den må vi ikke forpasse.",
-    author: "Sundhedsreformen, 2025",
-    style: "Transformationel",
-    theme: "Vision"
+    text: "Den leder, der er tættest på problemet, er oftest tættest på løsningen.",
+    author: "Lederweb, 2023",
+    style: "Nærledelse",
+    theme: "Forandringsledelse"
   },
   {
     id: 14,
+    text: "Nærledelse er ikke en buffer mod forandring. Det er forudsætningen for den.",
+    author: "Nordisk Sundhedsledelse",
+    style: "Nærledelse",
+    theme: "Forandringsledelse"
+  },
+  {
+    id: 15,
+    text: "Nærledelse er svaret på mange af de udfordringer, vi ser i forandringsparathed og fastholdelse.",
+    author: "Regionernes Ledelsesakademi",
+    style: "Nærledelse",
+    theme: "Forandringsledelse"
+  },
+
+  // ══════════════════════════════════════════════════════
+  // NÆRLEDELSE × VISION
+  // ══════════════════════════════════════════════════════
+  {
+    id: 16,
+    text: "Nærledelse er ikke en ledelsesstil. Det er et ledelsesansvar.",
+    author: "DSS Konference, 2023",
+    style: "Nærledelse",
+    theme: "Vision"
+  },
+  {
+    id: 17,
+    text: "Visionen forankres ikke i præsentationer — den forankres i hverdagens ledelse.",
+    author: "LinkedIn Top Voice, 2024",
+    style: "Nærledelse",
+    theme: "Vision"
+  },
+  {
+    id: 18,
+    text: "En leder uden nærhed til sine medarbejdere er en leder uden jordforbindelse til sin vision.",
+    author: "Lederudviklingsprogram, Region Nord",
+    style: "Nærledelse",
+    theme: "Vision"
+  },
+  {
+    id: 19,
+    text: "Det nære sundhedsvæsen er ikke en struktur. Det er en ledelsesfilosofi.",
+    author: "Sundhedsreformen, 2025",
+    style: "Nærledelse",
+    theme: "Vision"
+  },
+  {
+    id: 20,
+    text: "Når vision og dagligdag mødes i lederen, sker der noget.",
+    author: "DSS, 2024",
+    style: "Nærledelse",
+    theme: "Vision"
+  },
+
+  // ══════════════════════════════════════════════════════
+  // TRANSFORMATIONEL × KERNEOPGAVEN
+  // ══════════════════════════════════════════════════════
+  {
+    id: 21,
+    text: "Vi leder ikke steder. Vi leder mennesker, der passer på andre mennesker.",
+    author: "DSS, 2024",
+    style: "Transformationel",
+    theme: "Kerneopgaven"
+  },
+  {
+    id: 22,
+    text: "Transformation, der glemmer kerneopgaven, er disruption af det, der virker.",
+    author: "Nordisk Ledelsesforum",
+    style: "Transformationel",
+    theme: "Kerneopgaven"
+  },
+  {
+    id: 23,
+    text: "Den transformationelle leder holder to ting i hånden på én gang: fremtiden og patientens behov.",
+    author: "DSS Konference, 2024",
+    style: "Transformationel",
+    theme: "Kerneopgaven"
+  },
+  {
+    id: 24,
+    text: "Vi transformerer for patienten. Ikke for organisationsdiagrammet.",
+    author: "Sundhedsreformen, 2025",
+    style: "Transformationel",
+    theme: "Kerneopgaven"
+  },
+  {
+    id: 25,
+    text: "Kerneopgaven er ikke et hinder for transformation. Det er dens formål.",
+    author: "Executive Coach",
+    style: "Transformationel",
+    theme: "Kerneopgaven"
+  },
+
+  // ══════════════════════════════════════════════════════
+  // TRANSFORMATIONEL × PSYKOLOGISK TRYGHED
+  // ══════════════════════════════════════════════════════
+  {
+    id: 26,
+    text: "Transformation kræver tolerance for det ufærdige.",
+    author: "Lederforeningen DSR, 2024",
+    style: "Transformationel",
+    theme: "Psykologisk tryghed"
+  },
+  {
+    id: 27,
+    text: "Du kan ikke transformere en organisation, hvis medarbejderne ikke tør sige sandheden.",
+    author: "DSS, 2024",
+    style: "Transformationel",
+    theme: "Psykologisk tryghed"
+  },
+  {
+    id: 28,
+    text: "Psykologisk tryghed er ikke en forudsætning for stabilitet. Det er en forudsætning for bevægelse.",
+    author: "Lederudviklingsprogram",
+    style: "Transformationel",
+    theme: "Psykologisk tryghed"
+  },
+  {
+    id: 29,
+    text: "Den leder, der skaber tryghed under forandring, skaber mulighed for ægte transformation.",
+    author: "Nordisk Sundhedsledelse",
+    style: "Transformationel",
+    theme: "Psykologisk tryghed"
+  },
+  {
+    id: 30,
+    text: "Forandring er lettest for dem, der føler sig tryggest.",
+    author: "LinkedIn Top Voice, 2025",
+    style: "Transformationel",
+    theme: "Psykologisk tryghed"
+  },
+
+  // ══════════════════════════════════════════════════════
+  // TRANSFORMATIONEL × FORANDRINGSLEDELSE
+  // ══════════════════════════════════════════════════════
+  {
+    id: 31,
+    text: "Vi har en once in a lifetime-mulighed for at transformere sundhedsvæsenet. Den må vi ikke forpasse.",
+    author: "Sundhedsreformen, 2025",
+    style: "Transformationel",
+    theme: "Forandringsledelse"
+  },
+  {
+    id: 32,
     text: "Transformation er ikke et projekt. Transformation er en tilstand.",
     author: "McKinsey Health, 2023",
     style: "Transformationel",
     theme: "Forandringsledelse"
   },
   {
-    id: 15,
+    id: 33,
     text: "Vi skal tænke radikalt nyt — ikke fordi vi kan, men fordi vi er nødt til det.",
     author: "DSS, 2025",
     style: "Transformationel",
     theme: "Forandringsledelse"
   },
   {
-    id: 16,
+    id: 34,
+    text: "Go do it.",
+    author: "DSS — Sundhedsvæsenets nye æra, 2025",
+    style: "Transformationel",
+    theme: "Forandringsledelse"
+  },
+  {
+    id: 35,
+    text: "Forandring sker ikke ved at vente. Forandring sker ved at lede.",
+    author: "Dansk Ledelsesakademi",
+    style: "Transformationel",
+    theme: "Forandringsledelse"
+  },
+
+  // ══════════════════════════════════════════════════════
+  // TRANSFORMATIONEL × VISION
+  // ══════════════════════════════════════════════════════
+  {
+    id: 36,
+    text: "Vi er i gang med den største reform i 20 år. Det kræver ledere, der kan lede i forandring.",
+    author: "Region Sjælland, 2025",
+    style: "Transformationel",
+    theme: "Vision"
+  },
+  {
+    id: 37,
     text: "Den transformationelle leder ser ikke barrierer — de ser uudnyttede muligheder for systemforandring.",
     author: "Nordisk Sundhedsledelse",
     style: "Transformationel",
     theme: "Vision"
   },
   {
-    id: 17,
-    text: "Vi er i gang med den største reform i 20 år. Det kræver ledere, der kan lede i forandring.",
-    author: "Region Sjælland, 2025",
-    style: "Transformationel",
-    theme: "Forandringsledelse"
-  },
-  {
-    id: 18,
-    text: "Forandring sker ikke ved at vente. Forandring sker ved at lede.",
-    author: "Dansk Ledelsesakademi",
-    style: "Transformationel",
-    theme: "Forandringsledelse"
-  },
-  {
-    id: 19,
-    text: "Go do it.",
-    author: "DSS — Sundhedsvæsenets nye æra, 2025",
-    style: "Transformationel",
-    theme: "Vision"
-  },
-  {
-    id: 20,
-    text: "Transformationsledelse handler om at skabe mening i det, der endnu ikke giver mening.",
-    author: "Lederudvikling, Region Nord",
-    style: "Transformationel",
-    theme: "Vision"
-  },
-  {
-    id: 21,
+    id: 38,
     text: "Vi kan ikke løse fremtidens problemer med fortidens løsninger.",
     author: "Sundhedspolitisk Tidsskrift, 2024",
     style: "Transformationel",
     theme: "Vision"
   },
   {
-    id: 22,
-    text: "Den store forskel opstår ikke i strategidokumenterne — den opstår i hverdagens beslutninger.",
-    author: "Executive Coach, DSS",
-    style: "Transformationel",
-    theme: "Forandringsledelse"
-  },
-  {
-    id: 23,
-    text: "Transformation kræver tolerance for det ufærdige.",
-    author: "Lederforeningen DSR, 2024",
-    style: "Transformationel",
-    theme: "Forandringsledelse"
-  },
-  {
-    id: 24,
+    id: 39,
     text: "Vi skal ikke optimere det eksisterende. Vi skal genopfinde det nødvendige.",
     author: "Nordisk Sundhedsinstitut",
     style: "Transformationel",
     theme: "Vision"
   },
-
-  // ── STRATEGISK ──────────────────────────────────────────────────────────
   {
-    id: 25,
+    id: 40,
+    text: "Visionen er ikke et mål på en slide. Det er en retning, lederen legemliggør.",
+    author: "DSS Konference, 2024",
+    style: "Transformationel",
+    theme: "Vision"
+  },
+
+  // ══════════════════════════════════════════════════════
+  // STRATEGISK × KERNEOPGAVEN
+  // ══════════════════════════════════════════════════════
+  {
+    id: 41,
+    text: "Faglig ledelse er at holde blikket på kerneopgaven, mens alt andet bevæger sig.",
+    author: "Lederweb, 2024",
+    style: "Strategisk",
+    theme: "Kerneopgaven"
+  },
+  {
+    id: 42,
+    text: "Kerneopgaven er ikke en opgave. Kerneopgaven er en tilstand.",
+    author: "Executive Coach, 2023",
+    style: "Strategisk",
+    theme: "Kerneopgaven"
+  },
+  {
+    id: 43,
+    text: "Strategisk ledelse starter og slutter ved det, vi er her for.",
+    author: "Regionernes Ledelsesakademi",
+    style: "Strategisk",
+    theme: "Kerneopgaven"
+  },
+  {
+    id: 44,
+    text: "Prioritering er kærlighedens hårdeste form — at sige fra for at sige til.",
+    author: "DSS, 2024",
+    style: "Strategisk",
+    theme: "Kerneopgaven"
+  },
+  {
+    id: 45,
+    text: "En strategi, der ikke beskytter kerneopgaven, er ikke en strategi for sundhedsvæsenet.",
+    author: "Nordisk Sundhedsledelse",
+    style: "Strategisk",
+    theme: "Kerneopgaven"
+  },
+
+  // ══════════════════════════════════════════════════════
+  // STRATEGISK × PSYKOLOGISK TRYGHED
+  // ══════════════════════════════════════════════════════
+  {
+    id: 46,
+    text: "Strategisk ledelse kræver medarbejdere, der tør tale op. Det kræver psykologisk tryghed.",
+    author: "DSS Konference, 2024",
+    style: "Strategisk",
+    theme: "Psykologisk tryghed"
+  },
+  {
+    id: 47,
+    text: "En organisation uden psykologisk tryghed er en organisation, der leder strategisk i blinde.",
+    author: "Lederudviklingsprogram",
+    style: "Strategisk",
+    theme: "Psykologisk tryghed"
+  },
+  {
+    id: 48,
+    text: "Strategiens svaghed opdages ikke i analyserne. Den opdages af den medarbejder, der ikke tør sige det.",
+    author: "Lederweb",
+    style: "Strategisk",
+    theme: "Psykologisk tryghed"
+  },
+  {
+    id: 49,
+    text: "Tillid er den mest undervurderede strategiske ressource i sundhedsvæsenet.",
+    author: "LinkedIn Top Voice, 2024",
+    style: "Strategisk",
+    theme: "Psykologisk tryghed"
+  },
+  {
+    id: 50,
+    text: "Psykologisk tryghed er ikke blødt. Det er det hårdeste strategiske arbejde, en leder kan gøre.",
+    author: "Nordisk Ledelsesforum",
+    style: "Strategisk",
+    theme: "Psykologisk tryghed"
+  },
+
+  // ══════════════════════════════════════════════════════
+  // STRATEGISK × FORANDRINGSLEDELSE
+  // ══════════════════════════════════════════════════════
+  {
+    id: 51,
     text: "En strategi uden implementering er en drøm. Implementering uden strategi er et mareridt.",
     author: "Regionernes Ledelsesakademi",
     style: "Strategisk",
-    theme: "Vision"
+    theme: "Forandringsledelse"
   },
   {
-    id: 26,
+    id: 52,
+    text: "Det er ikke ressourcemanglen, der er vores største udfordring. Det er prioriteringsmanglen.",
+    author: "Region Hovedstaden, 2024",
+    style: "Strategisk",
+    theme: "Forandringsledelse"
+  },
+  {
+    id: 53,
+    text: "God strategi er ikke at vide, hvad man vil. Det er at vide, hvad man ikke gør.",
+    author: "Lederweb",
+    style: "Strategisk",
+    theme: "Forandringsledelse"
+  },
+  {
+    id: 54,
+    text: "Strategisk handlerum opstår ikke — det skabes.",
+    author: "Nordisk Ledelsesforum",
+    style: "Strategisk",
+    theme: "Forandringsledelse"
+  },
+  {
+    id: 55,
+    text: "Forandringsmodstand er ikke irrationel. Det er uinformeret.",
+    author: "DSS, 2024",
+    style: "Strategisk",
+    theme: "Forandringsledelse"
+  },
+
+  // ══════════════════════════════════════════════════════
+  // STRATEGISK × VISION
+  // ══════════════════════════════════════════════════════
+  {
+    id: 56,
     text: "Strategisk ledelse i sundhedsvæsenet kræver evnen til at sætte det lange lys på, mens man navigerer i mørket.",
     author: "DSS Konference, 2024",
     style: "Strategisk",
     theme: "Vision"
   },
   {
-    id: 27,
-    text: "Det er ikke ressourcemanglen, der er vores største udfordring. Det er prioriteringsmanglen.",
-    author: "Region Hovedstaden, 2024",
-    style: "Strategisk",
-    theme: "Ressourcer"
-  },
-  {
-    id: 28,
-    text: "God strategi er ikke at vide, hvad man vil. Det er at vide, hvad man ikke gør.",
-    author: "Lederweb",
-    style: "Strategisk",
-    theme: "Vision"
-  },
-  {
-    id: 29,
-    text: "Strategisk handlerum opstår ikke — det skabes.",
-    author: "Nordisk Ledelsesforum",
-    style: "Strategisk",
-    theme: "Vision"
-  },
-  {
-    id: 30,
-    text: "Vi skal møde hinanden på tværs af de eksisterende sektorgrænser. Alternativet er at møde problemet alene.",
-    author: "Sundhedsreformen, 2025",
-    style: "Strategisk",
-    theme: "Tværfaglighed"
-  },
-  {
-    id: 31,
+    id: 57,
     text: "Det strategiske lederskab handler om at skabe klarhed i kompleksitet.",
     author: "DSS, 2024",
     style: "Strategisk",
     theme: "Vision"
   },
   {
-    id: 32,
+    id: 58,
     text: "En leder uden strategi er en administrator. En administrator med strategi er en leder.",
     author: "Lederudviklingsprogram",
     style: "Strategisk",
     theme: "Vision"
   },
   {
-    id: 33,
+    id: 59,
     text: "Ressourcerne er altid knappe. Valget er, om du er strategisk i din knaphed.",
     author: "Sundhedspolitisk Tidsskrift",
     style: "Strategisk",
-    theme: "Ressourcer"
+    theme: "Vision"
   },
   {
-    id: 34,
-    text: "Strategisk ledelse starter med at erkende, hvad du ikke ved.",
-    author: "Nordisk Sundhedsledelse",
+    id: 60,
+    text: "Visionen er lederens vigtigste arbejdsredskab — og det mest misbrugte.",
+    author: "Nordisk Sundhedsinstitut",
     style: "Strategisk",
     theme: "Vision"
   },
 
-  // ── TVÆRSEKTORIEL ───────────────────────────────────────────────────────
+  // ══════════════════════════════════════════════════════
+  // TILLIDSBASERET × KERNEOPGAVEN
+  // ══════════════════════════════════════════════════════
   {
-    id: 35,
-    text: "Silotænkning fører til siloløsninger. Og siloløsninger fører til silopatienter.",
-    author: "DSS, 2023",
-    style: "Tværsektoriel",
-    theme: "Tværfaglighed"
+    id: 61,
+    text: "Patientsikkerhed starter ikke i hændelsesregistreringen — den starter i ledelseskulturen.",
+    author: "Region Hovedstaden",
+    style: "Tillidsbaseret",
+    theme: "Kerneopgaven"
   },
   {
-    id: 36,
-    text: "Det sammenhængende patientforløb starter med det sammenhængende lederforløb.",
-    author: "Regionernes Ledelsesakademi",
-    style: "Tværsektoriel",
-    theme: "Tværfaglighed"
-  },
-  {
-    id: 37,
-    text: "Tværsektoriel ledelse er ikke et organisationsdiagram. Det er en ledelsesambition.",
-    author: "Lederweb, 2024",
-    style: "Tværsektoriel",
-    theme: "Tværfaglighed"
-  },
-  {
-    id: 38,
-    text: "Vi kan ikke skabe sammenhæng i patientforløbene, så længe vi leder i siloer.",
-    author: "Sundhedsreformen, 2025",
-    style: "Tværsektoriel",
-    theme: "Tværfaglighed"
-  },
-  {
-    id: 39,
-    text: "Den gode tværsektorielle leder er nysgerrig på andres fagprofessioner.",
+    id: 62,
+    text: "Kvalitet er ikke en afdeling. Kvalitet er et ledelsesansvar.",
     author: "DSS Konference, 2024",
-    style: "Tværsektoriel",
-    theme: "Tværfaglighed"
+    style: "Tillidsbaseret",
+    theme: "Kerneopgaven"
   },
   {
-    id: 40,
-    text: "Grænsen mellem sektorer er administrativ. Patientens behov er det ikke.",
+    id: 63,
+    text: "Tillidsbaseret ledelse er ikke en modsætning til høj faglig standard. Det er forudsætningen.",
+    author: "Lederweb, 2024",
+    style: "Tillidsbaseret",
+    theme: "Kerneopgaven"
+  },
+  {
+    id: 64,
+    text: "Den kultur, lederen skaber, er den kultur, patienten møder.",
     author: "Nordisk Sundhedsledelse",
-    style: "Tværsektoriel",
-    theme: "Kvalitet & Patientsikkerhed"
+    style: "Tillidsbaseret",
+    theme: "Kerneopgaven"
   },
   {
-    id: 41,
-    text: "Tværfaglig videndeling er ikke en aktivitet — det er en ledelsesstrategi.",
-    author: "Region Midtjylland",
-    style: "Tværsektoriel",
-    theme: "Tværfaglighed"
-  },
-  {
-    id: 42,
-    text: "Det nære sundhedsvæsen forudsætter nære ledelsesrelationer på tværs.",
-    author: "Sundhedsstyrelsen, 2025",
-    style: "Tværsektoriel",
-    theme: "Tværfaglighed"
-  },
-  {
-    id: 43,
-    text: "Sammenhæng i forløbet kræver sammenhæng i ledelsen.",
-    author: "LinkedIn Top Voice, 2024",
-    style: "Tværsektoriel",
-    theme: "Tværfaglighed"
-  },
-  {
-    id: 44,
-    text: "Man kan ikke koordinere det, man ikke forstår. Tværsektoriel forståelse er en ledelseskompetence.",
-    author: "DSS",
-    style: "Tværsektoriel",
-    theme: "Tværfaglighed"
+    id: 65,
+    text: "Kerneopgaven udføres bedst af folk, der har tillid til dem, de arbejder med.",
+    author: "DSS, 2024",
+    style: "Tillidsbaseret",
+    theme: "Kerneopgaven"
   },
 
-  // ── TILLIDSBASERET ──────────────────────────────────────────────────────
+  // ══════════════════════════════════════════════════════
+  // TILLIDSBASERET × PSYKOLOGISK TRYGHED
+  // ══════════════════════════════════════════════════════
   {
-    id: 45,
+    id: 66,
     text: "Tillidsbaseret ledelse er ikke et alternativ til styring — det er forudsætningen for effektiv styring.",
     author: "Region Nordjylland, 2024",
     style: "Tillidsbaseret",
     theme: "Psykologisk tryghed"
   },
   {
-    id: 46,
+    id: 67,
     text: "Kontrol er dyrt. Tillid er en investering.",
     author: "Lederweb, 2023",
     style: "Tillidsbaseret",
     theme: "Psykologisk tryghed"
   },
   {
-    id: 47,
-    text: "En leder, der ikke stoler på sine medarbejdere, stiller sig selv ikke tilstrækkeligt spørgsmål.",
-    author: "Executive Coach",
-    style: "Tillidsbaseret",
-    theme: "Psykologisk tryghed"
-  },
-  {
-    id: 48,
+    id: 68,
     text: "Psykologisk tryghed er ikke et mål — det er forudsætningen for at nå vores mål.",
     author: "Lederudviklingsprogram, Region Midt",
     style: "Tillidsbaseret",
     theme: "Psykologisk tryghed"
   },
   {
-    id: 49,
+    id: 69,
     text: "Du kan ikke skabe psykologisk tryghed med en PowerPoint-præsentation.",
     author: "DSS, 2024",
     style: "Tillidsbaseret",
     theme: "Psykologisk tryghed"
   },
   {
-    id: 50,
-    text: "Tillid tager år at opbygge og sekunder at ødelægge. Investér derefter.",
-    author: "Nordisk Ledelsesforum",
-    style: "Tillidsbaseret",
-    theme: "Psykologisk tryghed"
-  },
-  {
-    id: 51,
-    text: "Den leder, der ikke kan fejle, lærer heller ikke.",
-    author: "Lederforeningen DSR",
-    style: "Tillidsbaseret",
-    theme: "Psykologisk tryghed"
-  },
-  {
-    id: 52,
-    text: "Psykologisk tryghed måles ikke i trivselsmålinger — den mærkes i ganghuset.",
-    author: "Region Sjælland",
-    style: "Tillidsbaseret",
-    theme: "Psykologisk tryghed"
-  },
-  {
-    id: 53,
-    text: "Tillid er ikke en følelse. Tillid er en ledelsesbeslutning.",
-    author: "Nordisk Sundhedsledelse, 2024",
-    style: "Tillidsbaseret",
-    theme: "Psykologisk tryghed"
-  },
-  {
-    id: 54,
-    text: "En organisation med høj psykologisk tryghed er en organisation, der tør se sandheden i øjnene.",
-    author: "DSS Konference",
-    style: "Tillidsbaseret",
-    theme: "Psykologisk tryghed"
-  },
-
-  // ── FAGLIG ──────────────────────────────────────────────────────────────
-  {
-    id: 55,
-    text: "Faglig ledelse er at holde blikket på kerneopgaven, mens alt andet bevæger sig.",
-    author: "Lederweb, 2024",
-    style: "Faglig",
-    theme: "Kerneopgaven"
-  },
-  {
-    id: 56,
-    text: "Faglig stolthed er et aktiv — men kun hvis den er åben og ikke defensiv.",
-    author: "DSS, 2023",
-    style: "Faglig",
-    theme: "Kerneopgaven"
-  },
-  {
-    id: 57,
-    text: "Den bedste faglige leder er ikke den, der ved mest — det er den, der stiller de bedste spørgsmål.",
-    author: "Lederudviklingsprogram",
-    style: "Faglig",
-    theme: "Kerneopgaven"
-  },
-  {
-    id: 58,
-    text: "Kerneopgaven er ikke en opgave. Kerneopgaven er en tilstand.",
-    author: "Executive Coach, 2023",
-    style: "Faglig",
-    theme: "Kerneopgaven"
-  },
-  {
-    id: 59,
-    text: "Når vi taber kerneopgaven af syne, taber vi os selv.",
-    author: "Sygeplejersken, 2024",
-    style: "Faglig",
-    theme: "Kerneopgaven"
-  },
-  {
-    id: 60,
-    text: "Patientsikkerhed starter ikke i hændelsesregistreringen — den starter i ledelseskulturen.",
-    author: "Region Hovedstaden",
-    style: "Faglig",
-    theme: "Kvalitet & Patientsikkerhed"
-  },
-  {
-    id: 61,
-    text: "Kvalitet er ikke en afdeling. Kvalitet er et ledelsesansvar.",
-    author: "DSS Konference, 2024",
-    style: "Faglig",
-    theme: "Kvalitet & Patientsikkerhed"
-  },
-  {
-    id: 62,
-    text: "Den faglige leder er brobygger mellem fag og organisation.",
-    author: "Nordisk Sundhedsledelse",
-    style: "Faglig",
-    theme: "Kerneopgaven"
-  },
-  {
-    id: 63,
-    text: "Faglig ledelse uden menneskelig ledelse er teknik. Menneskelig ledelse uden faglig ledelse er velvilje.",
-    author: "Lederweb",
-    style: "Faglig",
-    theme: "Kerneopgaven"
-  },
-  {
-    id: 64,
-    text: "Vi leder ikke steder. Vi leder mennesker, der passer på andre mennesker.",
-    author: "DSS, 2024",
-    style: "Faglig",
-    theme: "Kerneopgaven"
-  },
-
-  // ── POLITISK ────────────────────────────────────────────────────────────
-  {
-    id: 65,
-    text: "Politisk ledelse i sundhedsvæsenet kræver evnen til at oversætte borgerperspektivet til organisatorisk handling.",
-    author: "Indenrigs- og Sundhedsministeriet, 2024",
-    style: "Politisk",
-    theme: "Vision"
-  },
-  {
-    id: 66,
-    text: "En leder, der ikke forstår den politiske kontekst, leder blindt.",
-    author: "Regionernes Formandskab",
-    style: "Politisk",
-    theme: "Vision"
-  },
-  {
-    id: 67,
-    text: "Der skal være plads til både styring og ledelse i sundhedsvæsenet.",
-    author: "DSS, 2024",
-    style: "Politisk",
-    theme: "Ressourcer"
-  },
-  {
-    id: 68,
-    text: "Sundhedspolitik er ledelsespolitik. Og ledelsespolitik er sundhedspolitik.",
-    author: "Nordisk Sundhedsledelse",
-    style: "Politisk",
-    theme: "Vision"
-  },
-  {
-    id: 69,
-    text: "Den politiske leder navigerer i et terræn, hvor alle har en mening om det, de fleste ikke forstår.",
-    author: "Executive Coach",
-    style: "Politisk",
-    theme: "Vision"
-  },
-  {
     id: 70,
-    text: "At lede i det politisk styrede system kræver kompas, ikke kun kortlæsning.",
-    author: "Region Midtjylland, 2024",
-    style: "Politisk",
+    text: "En leder, der ikke stoler på sine medarbejdere, stiller sig selv ikke tilstrækkeligt spørgsmål.",
+    author: "Executive Coach",
+    style: "Tillidsbaseret",
+    theme: "Psykologisk tryghed"
+  },
+
+  // ══════════════════════════════════════════════════════
+  // TILLIDSBASERET × FORANDRINGSLEDELSE
+  // ══════════════════════════════════════════════════════
+  {
+    id: 71,
+    text: "Tillid er den ene konstant, der kan bære en organisation gennem forandring.",
+    author: "DSS, 2024",
+    style: "Tillidsbaseret",
     theme: "Forandringsledelse"
   },
   {
-    id: 71,
-    text: "Politisk ledelse er ikke at følge vinden — det er at forstå, hvorfra den blæser.",
-    author: "DSS Konference",
-    style: "Politisk",
-    theme: "Vision"
-  },
-  {
     id: 72,
-    text: "Legitimitet skabes ikke i boardrooms. Den skabes i mødet med borgerne og medarbejderne.",
-    author: "Sundhedspolitisk Tidsskrift",
-    style: "Politisk",
-    theme: "Vision"
+    text: "Den leder, der ikke kan fejle, lærer heller ikke.",
+    author: "Lederforeningen DSR",
+    style: "Tillidsbaseret",
+    theme: "Forandringsledelse"
   },
-
-  // ── HYBRID ──────────────────────────────────────────────────────────────
   {
     id: 73,
-    text: "Hybrid ledelse handler om at vælge den rette ledelsesstil til den rette situation — ikke om at vælge én stil.",
-    author: "Lederudviklingsprogram, 2024",
-    style: "Hybrid",
+    text: "Forandring uden tillid er tvang. Forandring med tillid er fælles bevægelse.",
+    author: "Nordisk Ledelsesforum",
+    style: "Tillidsbaseret",
     theme: "Forandringsledelse"
   },
   {
     id: 74,
-    text: "Den hybride leder er komfortabel med kompleksitet — og bruger den til at skabe klarhed.",
-    author: "Nordisk Ledelsesforum",
-    style: "Hybrid",
+    text: "Den sværeste forandring er den, ingen tør sige er nødvendig.",
+    author: "Lederweb, 2024",
+    style: "Tillidsbaseret",
     theme: "Forandringsledelse"
   },
   {
     id: 75,
-    text: "Vi er nødt til at lede på tværs af logikker — faglighed, økonomi, politik og menneskighed.",
-    author: "DSS, 2024",
-    style: "Hybrid",
-    theme: "Tværfaglighed"
+    text: "Psykologisk tryghed under forandring er ikke en luksus — det er en forudsætning for at komme helskindet igennem.",
+    author: "Region Sjælland",
+    style: "Tillidsbaseret",
+    theme: "Forandringsledelse"
   },
+
+  // ══════════════════════════════════════════════════════
+  // TILLIDSBASERET × VISION
+  // ══════════════════════════════════════════════════════
   {
     id: 76,
-    text: "En leder i det moderne sundhedsvæsen er på én gang faglig, administrativ, politisk og menneskelig.",
-    author: "Regionernes Ledelsesakademi",
-    style: "Hybrid",
-    theme: "Kerneopgaven"
+    text: "Tillid tager år at opbygge og sekunder at ødelægge. Investér derefter.",
+    author: "Nordisk Ledelsesforum",
+    style: "Tillidsbaseret",
+    theme: "Vision"
   },
   {
     id: 77,
-    text: "Ledelsesspændet i sundhedsvæsenet er for stort. Ikke til at lede — men til at lede godt.",
-    author: "Lederweb, 2025",
-    style: "Hybrid",
-    theme: "Rekruttering"
+    text: "Tillid er ikke en følelse. Tillid er en ledelsesbeslutning.",
+    author: "Nordisk Sundhedsledelse, 2024",
+    style: "Tillidsbaseret",
+    theme: "Vision"
   },
   {
     id: 78,
-    text: "Fremtidens sundhedsvæsen kræver ledere, der kan rumme modsætninger uden at forenkle dem.",
-    author: "Nordisk Sundhedsinstitut",
-    style: "Hybrid",
+    text: "En organisation med høj psykologisk tryghed er en organisation, der tør se sandheden i øjnene.",
+    author: "DSS Konference",
+    style: "Tillidsbaseret",
     theme: "Vision"
   },
   {
     id: 79,
-    text: "Hybrid ledelse er ikke et kompromis. Det er en kompetence.",
-    author: "DSS Konference, 2024",
-    style: "Hybrid",
-    theme: "Forandringsledelse"
+    text: "Psykologisk tryghed måles ikke i trivselsmålinger — den mærkes i ganghuset.",
+    author: "Region Sjælland",
+    style: "Tillidsbaseret",
+    theme: "Vision"
   },
   {
     id: 80,
-    text: "Vi rekrutterer til gårsdagens stillinger med morgendagens krav. Det er vores største ledelsesudfordring.",
-    author: "Region Hovedstaden, 2024",
-    style: "Hybrid",
-    theme: "Rekruttering"
+    text: "En leder, hvis vision ikke er forankret i tillid, kan ikke forvente, at andre løfter den med.",
+    author: "Lederudviklingsprogram",
+    style: "Tillidsbaseret",
+    theme: "Vision"
   }
+
 ];
 
-const STYLES = [...new Set(QUOTES.map(q => q.style))];
-const THEMES = [...new Set(QUOTES.map(q => q.theme))];
+const STYLES = ["Nærledelse", "Transformationel", "Strategisk", "Tillidsbaseret"];
+const THEMES = ["Kerneopgaven", "Psykologisk tryghed", "Forandringsledelse", "Vision"];
