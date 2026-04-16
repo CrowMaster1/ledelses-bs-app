@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(update-config)",
+      "WebSearch",
+      "WebFetch(domain:dssnet.dk)",
+      "WebFetch(domain:www.lederweb.dk)",
+      "WebFetch(domain:vaelgklogt.dk)"
+    ]
+  }
+}
