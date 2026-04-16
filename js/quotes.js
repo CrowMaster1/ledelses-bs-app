@@ -1,10 +1,17 @@
 const QuotesModule = (() => {
   let activeStyle = null;
   let activeTheme = null;
+  let filtered = [];
+  let currentIndex = 0;
+
+  // Touch swipe tracking
+  let touchStartX = 0;
 
   function init() {
     renderFilters();
-    renderQuotes();
+    updateFiltered();
+    renderCard();
+    attachSwipe();
   }
 
   function renderFilters() {
@@ -33,7 +40,9 @@ const QuotesModule = (() => {
     document.querySelectorAll('#style-filters .filter-pill').forEach(p => p.classList.remove('active'));
     activeStyle = wasActive ? null : style;
     if (!wasActive) btn.classList.add('active');
-    renderQuotes();
+    currentIndex = 0;
+    updateFiltered();
+    renderCard();
   }
 
   function toggleTheme(theme, btn) {
@@ -41,21 +50,25 @@ const QuotesModule = (() => {
     document.querySelectorAll('#theme-filters .filter-pill').forEach(p => p.classList.remove('active'));
     activeTheme = wasActive ? null : theme;
     if (!wasActive) btn.classList.add('active');
-    renderQuotes();
+    currentIndex = 0;
+    updateFiltered();
+    renderCard();
   }
 
-  function renderQuotes() {
-    const list = document.getElementById('quotes-list');
-    const filtered = QUOTES.filter(q => {
+  function updateFiltered() {
+    filtered = QUOTES.filter(q => {
       const styleMatch = !activeStyle || q.style === activeStyle;
       const themeMatch = !activeTheme || q.theme === activeTheme;
       return styleMatch && themeMatch;
     });
+  }
 
-    list.innerHTML = '';
+  function renderCard() {
+    const container = document.getElementById('quotes-list');
+    container.innerHTML = '';
 
     if (filtered.length === 0) {
-      list.innerHTML = `
+      container.innerHTML = `
         <div class="empty-state">
           <p class="empty-label">Ingen citater matcher det valgte filter.</p>
           <p>Juster din søgning for at se relevante ledelsesperspektiver.</p>
@@ -63,11 +76,45 @@ const QuotesModule = (() => {
       return;
     }
 
+    const q = filtered[currentIndex];
     const favs = getFavorites();
-    filtered.forEach(q => {
-      const card = buildCard(q, favs.includes(q.id));
-      list.appendChild(card);
-    });
+    const isFav = favs.includes(q.id);
+
+    const card = buildCard(q, isFav);
+    container.appendChild(card);
+
+    // Navigation row
+    const nav = document.createElement('div');
+    nav.className = 'quote-nav';
+    nav.innerHTML = `
+      <button class="nav-btn prev-btn" aria-label="Forrige citat" ${currentIndex === 0 ? 'disabled' : ''}>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <span class="nav-counter">${currentIndex + 1} <span class="nav-sep">af</span> ${filtered.length}</span>
+      <button class="nav-btn next-btn" aria-label="Næste citat" ${currentIndex === filtered.length - 1 ? 'disabled' : ''}>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>`;
+
+    nav.querySelector('.prev-btn').addEventListener('click', () => navigate(-1));
+    nav.querySelector('.next-btn').addEventListener('click', () => navigate(1));
+    container.appendChild(nav);
+  }
+
+  function navigate(dir) {
+    const next = currentIndex + dir;
+    if (next < 0 || next >= filtered.length) return;
+    currentIndex = next;
+    renderCard();
+    document.getElementById('quotes-list').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function attachSwipe() {
+    const container = document.getElementById('tab-citater');
+    container.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    container.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 50) navigate(dx < 0 ? 1 : -1);
+    }, { passive: true });
   }
 
   function buildCard(q, isFav) {
@@ -108,37 +155,27 @@ const QuotesModule = (() => {
         </button>
       </div>`;
 
-    const shareBtn = card.querySelector('.share-btn');
-    const copyBtn = card.querySelector('.copy-btn');
-    const favBtn = card.querySelector('.fav-btn');
-
-    if (shareBtn) shareBtn.addEventListener('click', () => shareQuote(q));
-    if (copyBtn) copyBtn.addEventListener('click', () => copyQuote(q));
-    favBtn.addEventListener('click', () => toggleFav(q.id, favBtn));
+    if (canShare) card.querySelector('.share-btn').addEventListener('click', () => shareQuote(q));
+    else card.querySelector('.copy-btn').addEventListener('click', () => copyQuote(q));
+    card.querySelector('.fav-btn').addEventListener('click', e => toggleFav(q.id, e.currentTarget));
 
     return card;
   }
 
   async function shareQuote(q) {
     const text = `"${q.text}" — ${q.author}`;
-    try {
-      await navigator.share({ text });
-    } catch (_) {
-      copyToClipboard(text);
-      showToast('Kopi klar til næste ledergruppe-møde');
-    }
+    try { await navigator.share({ text }); }
+    catch (_) { await copyToClipboard(text); showToast('Kopi klar til næste ledergruppe-møde'); }
   }
 
   async function copyQuote(q) {
-    const text = `"${q.text}" — ${q.author}`;
-    await copyToClipboard(text);
+    await copyToClipboard(`"${q.text}" — ${q.author}`);
     showToast('Kopi klar til næste ledergruppe-møde');
   }
 
   async function copyToClipboard(text) {
-    try {
-      await navigator.clipboard.writeText(text);
-    } catch (_) {
+    try { await navigator.clipboard.writeText(text); }
+    catch (_) {
       const ta = document.createElement('textarea');
       ta.value = text;
       ta.style.cssText = 'position:fixed;opacity:0;top:-9999px';

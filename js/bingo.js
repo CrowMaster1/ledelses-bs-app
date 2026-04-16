@@ -31,7 +31,10 @@ const BingoModule = (() => {
     state.words.forEach((word, i) => {
       const cell = document.createElement('div');
       const isFree = i === FREE_INDEX;
+      const len = word.length;
+      const sizeAttr = len > 18 ? 'xl' : len > 12 ? 'lg' : 'sm';
       cell.className = 'bingo-cell' + (state.marked[i] ? ' marked' : '') + (isFree ? ' free' : '');
+      cell.dataset.len = sizeAttr;
       cell.setAttribute('role', 'gridcell');
       cell.setAttribute('aria-label', word + (state.marked[i] ? ' — markeret' : ''));
       cell.innerHTML = `<span class="bingo-cell-text">${escHtml(word)}</span>`;
